@@ -7,6 +7,14 @@ public class Item {
 	private Contato valor;
 	private Item proximo;
 	
+	
+	
+	public Item(Contato valor) {
+        this.valor = valor;
+        this.proximo = null;
+    }
+	
+	
 	public Contato getValor() {
 		return valor;
 	}

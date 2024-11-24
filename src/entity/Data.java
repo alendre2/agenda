@@ -1,35 +1,32 @@
 package entity;
 
 public class Data {
-	
-	private String data;
-	private String mes;
-	
-	public Data(String data, String mes) {
-		this.data = data;
-		this.mes = mes;
-	}
-	
+    private int dia;
+    private int mes;
 
-	public String getData() {
-		return data;
-	}
+    public Data(int dia, int mes) {
+        this.dia = dia;
+        this.mes = mes;
+    }
 
-	public void setData(String data) {
-		this.data = data;
-	}
+    public int getDia() {
+        return dia;
+    }
 
-	public String getMes() {
-		return mes;
-	}
+    public void setDia(int dia) {
+        this.dia = dia;
+    }
 
-	public void setMes(String mes) {
-		this.mes = mes;
-	}
-	
-	
-	
-	
-	
+    public int getMes() {
+        return mes;
+    }
 
+    public void setMes(int mes) {
+        this.mes = mes;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%02d/%02d", dia, mes);
+    }
 }
