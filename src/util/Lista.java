@@ -55,6 +55,8 @@ public class Lista {
             novo.setProximo(atual.getProximo());
             atual.setProximo(novo);
         }
+        
+        salvarDadosContatos();
     }
 
     /**
